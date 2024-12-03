@@ -22,7 +22,7 @@
 			{ text: 'creates content', deleteAfter: 650, typeAfter: 650 },
 			{ text: 'loves friends', deleteAfter: 650, typeAfter: 650 },
 			{ text: 'sucks at programming', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'is gay af :3', deleteAfter: 70, typeAfter: 200 },
+			{ text: 'is gay af :3', deleteAfter: 30, typeAfter: 200 },
 			{ text: 'is lazy (in a good way)', deleteAfter: 650, typeAfter: 650 }
 		];
 
