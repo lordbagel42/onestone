@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ModeToggle from './../../lib/components/mode-toggle.svelte';
+	import ModeToggle from '../../lib/components/mode-toggle.svelte';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import PortfolioSidebar from '$lib/components/portfolio-sidebar.svelte';
 	import '../../app.css';
@@ -17,5 +17,3 @@
 		{@render children?.()}
 	</main>
 </Sidebar.Provider>
-
-{@render children?.()}
