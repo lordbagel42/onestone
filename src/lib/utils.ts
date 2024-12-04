@@ -26,29 +26,29 @@ interface NavItem {
 	icon: typeof Icon;
 	items?: NavItem[];
 }
-
+balls
 export const navBar: NavItem[] = [
 	{
 		title: 'About Me',
-		url: 'about',
+		url: '/portfolio/about',
 		selected: false,
 		icon: House
 	},
 	{
 		title: 'Experiences',
-		url: 'experiences',
+		url: '/portfolio/experiences',
 		selected: false,
 		icon: Beaker,
 		items: [
 			{
 				title: 'Quilting',
-				url: 'experiences/quilting',
+				url: '/portfolio/experiences/quilting',
 				selected: false,
 				icon: Shapes
 			},
 			{
 				title: 'Tabletop Games',
-				url: 'experiences/games',
+				url: '/portfolio/experiences/games',
 				selected: false,
 				icon: Dices
 			}
@@ -56,37 +56,37 @@ export const navBar: NavItem[] = [
 	},
 	{
 		title: 'XLAB',
-		url: 'xlab',
+		url: '/portfolio/xlab',
 		selected: false,
 		icon: LoaderPinwheel
 	},
 	{
 		title: 'Project Good',
-		url: 'project-good',
+		url: '/portfolio/project-good',
 		selected: false,
 		icon: Laugh
 	},
 	{
 		title: 'Math',
-		url: 'math',
+		url: '/portfolio/math',
 		selected: false,
 		icon: Calculator
 	},
 	{
 		title: 'Living in Beta',
-		url: 'living-in-beta',
+		url: '/portfolio/living-in-beta',
 		selected: false,
 		icon: HousePlus
 	},
 	{
 		title: 'Flex Lab',
-		url: 'flex-lab',
+		url: '/portfolio/flex-lab',
 		selected: false,
 		icon: TestTubeDiagonal
 	},
 	{
 		title: 'Miscellaneous Info',
-		url: 'misc',
+		url: '/portfolio/misc',
 		selected: false,
 		icon: CircleHelp
 	}
