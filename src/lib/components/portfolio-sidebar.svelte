@@ -28,44 +28,44 @@
 			items: [
 				{
 					title: 'Quilting',
-					url: '#',
+					url: 'quilting',
 					icon: Shapes
 				},
 				{
-					title: 'Tabletop Game Design',
-					url: '#',
+					title: 'Tabletop Games',
+					url: 'games',
 					icon: Dices
 				}
 			]
 		},
 		{
 			title: 'XLAB',
-			url: '#',
+			url: 'xlab',
 			icon: LoaderPinwheel
 		},
 		{
 			title: 'Project Good',
-			url: '#',
+			url: 'project-good',
 			icon: Laugh
 		},
 		{
 			title: 'Math',
-			url: '#',
+			url: 'math',
 			icon: Calculator
 		},
 		{
 			title: 'Living in Beta',
-			url: '#',
+			url: 'living-in-beta',
 			icon: HousePlus
 		},
 		{
 			title: 'Flex Lab',
-			url: '#',
+			url: 'flex-lab',
 			icon: TestTubeDiagonal
 		},
 		{
 			title: 'Miscellaneous Info',
-			url: '#',
+			url: 'misc',
 			icon: CircleHelp
 		}
 	];

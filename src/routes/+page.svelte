@@ -4,6 +4,7 @@
 	import { fade } from 'svelte/transition';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import '../app.css';
+	import ModeToggle from '$lib/components/mode-toggle.svelte';
 
 	let isMobile = false;
 	let showButton = false;
@@ -51,8 +52,13 @@
 	</div>
 </div>
 
-{#if showButton}
-	<div class="fixed bottom-4 right-4 rounded-md p-2 text-white" transition:fade>
-		<Button href="/portfolio">the actual portfolio itself</Button>
+<div class="fixed bottom-4 right-4 rounded-md p-2">
+	<div class="flex items-center space-x-2">
+		{#if showButton}
+			<div transition:fade>
+				<Button href="/portfolio">the actual portfolio itself</Button>
+			</div>
+		{/if}
+		<ModeToggle />
 	</div>
-{/if}
+</div>
