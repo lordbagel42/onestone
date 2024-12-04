@@ -73,3 +73,16 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+.no-scroll {
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+}
+
+.vh-display {
+	height: calc(100vh - 40px) !important;
+}
+
+.hyperlink {
+	@apply text-blue-500 underline hover:text-blue-700;
+}

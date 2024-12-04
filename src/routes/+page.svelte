@@ -1,66 +1,58 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import TypeIt from 'typeit';
 	import { fade } from 'svelte/transition';
 	import Button from '$lib/components/ui/button/button.svelte';
-	import '../app.css';
 	import ModeToggle from '$lib/components/mode-toggle.svelte';
 
-	let isMobile = false;
-	let showButton = false;
+	let showButton = true; // show button by default instead of with a delay. might change in the future.
+	let currentQuote = '';
+	const quotes = [
+		{ text: 'The journey of a thousand miles begins with one step.', author: 'Lao Tzu' },
+		{ text: 'Creativity is intelligence having fun.', author: 'Albert Einstein' },
+		{ text: 'Stay hungry, stay foolish.', author: 'Steve Jobs' },
+		{ text: 'Do what you can, with what you have, where you are.', author: 'Theodore Roosevelt' },
+		{ text: 'Simplicity is the ultimate sophistication.', author: 'Leonardo da Vinci' },
+		{ text: 'The best way to predict the future is to create it.', author: 'Abraham Lincoln' },
+		{ text: "No ship has sailed too far if you're a really fast swimmer.", author: 'Sylvie Rupe' },
+		{
+			text: 'The only limit to our realization of tomorrow is our doubts of today.',
+			author: 'Franklin D. Roosevelt'
+		},
+		{ text: 'Maintain a healthy fear of what can go wrong', author: 'Detrich R.' },
+		{ text: 'Not all who wander are lost, but this robot is awfully close', author: 'Sylvie Rupe' }
+	];
+
+	function updateQuote() {
+		const randomIndex = Math.floor(Math.random() * quotes.length);
+		currentQuote = `"${quotes[randomIndex].text}" - ${quotes[randomIndex].author}`;
+	}
 
 	onMount(() => {
-		console.log('mounted');
-
-		setTimeout(() => {
-			showButton = true;
-		}, 2000);
-
-		const phrases = [
-			{ text: 'hates', deleteAfter: 150, typeAfter: 200 },
-			{ text: 'loves technology', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'hangs out in VR', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'creates content', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'loves friends', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'sucks at programming', deleteAfter: 650, typeAfter: 650 },
-			{ text: 'is gay af :3', deleteAfter: 30, typeAfter: 200 },
-			{ text: 'is lazy (in a good way)', deleteAfter: 650, typeAfter: 650 }
-		];
-
-		const typeItInstance = new TypeIt('#typewriter', {
-			lifeLike: false,
-			speed: 80,
-			deleteSpeed: 40,
-			loop: true,
-			loopDelay: 650
-		});
-
-		phrases.forEach(({ text, deleteAfter, typeAfter }) => {
-			typeItInstance.type(text).pause(deleteAfter).delete(text.length).pause(typeAfter);
-		});
-
-		typeItInstance.go();
+		updateQuote();
+		// setTimeout(() => (showButton = true), 250); // removed for now.
 	});
-
-	// TODO: IF MOBILE, DO THING BETTER. STEAL JOVANN CODE.
 </script>
 
-<div class="flex h-screen items-center justify-center">
-	<div class="text-center">
-		<p class="text-6xl">Hi.</p>
-		<h1 class="mt-2 text-xl">
-			I'm <b>Sylvie.</b> I'm just another person that <span id="typewriter"></span>
-		</h1>
+<div class="no-scroll">
+	<div class="flex h-screen flex-col items-center justify-center">
+		<div class="relative text-center">
+			<p class="text-6xl">Hi.</p>
+			<h1 class="mt-4 text-4xl font-bold">
+				I'm <span class="font-extrabold">Sylvie.</span>
+			</h1>
+		</div>
+		<p class="mt-4 text-center text-lg italic">{currentQuote}</p>
 	</div>
-</div>
 
-<div class="fixed bottom-4 right-4 rounded-md p-2">
-	<div class="flex items-center space-x-2">
+	<div class="fixed bottom-4 left-0 right-0 flex items-center justify-center">
 		{#if showButton}
 			<div transition:fade>
-				<Button href="/portfolio">the actual portfolio itself</Button>
+				<Button href="/portfolio/about">the portfolio</Button>
 			</div>
 		{/if}
+	</div>
+
+	<div class="fixed left-0 top-0">
 		<ModeToggle />
 	</div>
 </div>
