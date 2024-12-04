@@ -41,6 +41,8 @@
 
 		typeItInstance.go();
 	});
+
+	// TODO: IF MOBILE, DO THING BETTER. STEAL JOVANN CODE.
 </script>
 
 <div class="flex h-screen items-center justify-center">
