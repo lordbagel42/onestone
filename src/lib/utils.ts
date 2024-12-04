@@ -26,7 +26,7 @@ interface NavItem {
 	icon: typeof Icon;
 	items?: NavItem[];
 }
-balls
+
 export const navBar: NavItem[] = [
 	{
 		title: 'About Me',
