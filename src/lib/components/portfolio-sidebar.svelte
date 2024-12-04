@@ -1,74 +1,10 @@
 <script lang="ts">
-	import {
-		House,
-		Beaker,
-		Shapes,
-		Dices,
-		Laugh,
-		Calculator,
-		CircleHelp,
-		HousePlus,
-		LoaderPinwheel,
-		TestTubeDiagonal
-	} from 'lucide-svelte';
+	import { navBar, currentPage as current } from '$lib/utils';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import * as Collapsible from '$lib/components/ui/collapsible/index.js';
 	import { slide } from 'svelte/transition';
 
-	const navMain = [
-		{
-			title: 'About Me',
-			url: 'about',
-			icon: House
-		},
-		{
-			title: 'Experiences',
-			url: '#',
-			icon: Beaker,
-			items: [
-				{
-					title: 'Quilting',
-					url: 'quilting',
-					icon: Shapes
-				},
-				{
-					title: 'Tabletop Games',
-					url: 'games',
-					icon: Dices
-				}
-			]
-		},
-		{
-			title: 'XLAB',
-			url: 'xlab',
-			icon: LoaderPinwheel
-		},
-		{
-			title: 'Project Good',
-			url: 'project-good',
-			icon: Laugh
-		},
-		{
-			title: 'Math',
-			url: 'math',
-			icon: Calculator
-		},
-		{
-			title: 'Living in Beta',
-			url: 'living-in-beta',
-			icon: HousePlus
-		},
-		{
-			title: 'Flex Lab',
-			url: 'flex-lab',
-			icon: TestTubeDiagonal
-		},
-		{
-			title: 'Miscellaneous Info',
-			url: 'misc',
-			icon: CircleHelp
-		}
-	];
+	const navMain = navBar;
 </script>
 
 <Sidebar.Root variant="inset" collapsible="icon">
@@ -97,7 +33,7 @@
 													<Sidebar.MenuSubItem>
 														<Sidebar.MenuSubButton>
 															{#snippet child({ props })}
-																<a href={subItem.url} {...props}>
+																<a href={subItem.url} {...props} on:click={() => current(subItem)}>
 																	<subItem.icon />
 																	<span>{subItem.title}</span>
 																</a>
@@ -114,7 +50,7 @@
 							<Sidebar.MenuItem>
 								<Sidebar.MenuButton>
 									{#snippet child({ props })}
-										<a href={item.url} {...props}>
+										<a href={item.url} {...props} on:click={() => current(item)}>
 											<item.icon />
 											<span>{item.title}</span>
 										</a>
