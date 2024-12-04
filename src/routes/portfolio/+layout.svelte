@@ -1,14 +1,21 @@
 <script lang="ts">
+	import ModeToggle from './../../lib/components/mode-toggle.svelte';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
-	import AppSidebar from '$lib/components/app-sidebar.svelte';
+	import PortfolioSidebar from '$lib/components/portfolio-sidebar.svelte';
+	import '../../app.css';
 
 	let { children } = $props();
 </script>
 
 <Sidebar.Provider>
-	<AppSidebar />
+	<PortfolioSidebar />
 	<main class="w-screen">
-		<Sidebar.Trigger />
+		<div class="topbar">
+			<Sidebar.Trigger />
+			<ModeToggle />
+		</div>
 		{@render children?.()}
 	</main>
 </Sidebar.Provider>
+
+{@render children?.()}
