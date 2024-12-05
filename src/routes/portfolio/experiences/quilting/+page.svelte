@@ -1,4 +1,7 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import quiltDesign from '$lib/resources/quilt/quiltDesign.png';
+	import quiltSpreadsheet from '$lib/resources/quilt/quiltSpreadsheet.png';
+</script>
 
 <div class="mx-auto max-w-4xl rounded-lg p-8">
 	<h1 class="mb-6 text-3xl font-bold">My Quilting Experience</h1>
@@ -15,7 +18,7 @@
 
 	<section class="mb-8">
 		<img
-			src="https://placehold.co/1920x1080"
+			src={quiltSpreadsheet}
 			alt="Spreadsheet example"
 			class="h-auto w-full rounded-lg shadow-lg"
 		/>
@@ -32,11 +35,7 @@
 
 	<section class="mb-8">
 		<h2 class="mb-4 text-2xl font-semibold">Quilt Design</h2>
-		<img
-			src="https://placehold.co/1920x1080"
-			alt="Quilt design"
-			class="h-auto w-full rounded-lg shadow-lg"
-		/>
+		<img src={quiltDesign} alt="Quilt design" class="h-auto w-full rounded-lg shadow-lg" />
 		<p class="mt-4 text-lg leading-relaxed">
 			The design of my quilt held a lot of meaning. During its creation, I had friends going through
 			difficult times, and this quilt became a tribute to them.
