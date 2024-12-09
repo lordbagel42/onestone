@@ -3,25 +3,23 @@
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import * as Collapsible from '$lib/components/ui/collapsible/index.js';
 	import { slide } from 'svelte/transition';
-
-	const navMain = navBar;
 </script>
 
 <Sidebar.Root variant="inset" collapsible="icon">
 	<Sidebar.Content>
 		<Sidebar.Group>
-			<Sidebar.GroupLabel>Portfolio</Sidebar.GroupLabel>
+			<Sidebar.GroupLabel><a href="/">Portfolio</a></Sidebar.GroupLabel>
 			<Sidebar.GroupContent>
 				<Sidebar.Menu>
-					{#each navMain as item (item.title)}
-						{#if item.items}
+					{#each navBar as navItem (navItem.title)}
+						{#if navItem.items}
 							<Collapsible.Root open class="group/collapsible">
 								<Sidebar.MenuItem>
 									<Collapsible.Trigger>
 										{#snippet child({ props })}
 											<Sidebar.MenuButton {...props}>
-												<item.icon />
-												<span>{item.title}</span>
+												<navItem.icon />
+												<span>{navItem.title}</span>
 											</Sidebar.MenuButton>
 										{/snippet}
 									</Collapsible.Trigger>
@@ -29,7 +27,7 @@
 										<Sidebar.MenuSub>
 											<div transition:slide>
 												<!-- what ^  -->
-												{#each item.items as subItem (subItem.title)}
+												{#each navItem.items as subItem (subItem.title)}
 													<Sidebar.MenuSubItem>
 														<Sidebar.MenuSubButton>
 															{#snippet child({ props })}
@@ -50,9 +48,9 @@
 							<Sidebar.MenuItem>
 								<Sidebar.MenuButton>
 									{#snippet child({ props })}
-										<a href={item.url} {...props} on:click={() => current(item)}>
-											<item.icon />
-											<span>{item.title}</span>
+										<a href={navItem.url} {...props} on:click={() => current(navItem)}>
+											<navItem.icon />
+											<span>{navItem.title}</span>
 										</a>
 									{/snippet}
 								</Sidebar.MenuButton>
