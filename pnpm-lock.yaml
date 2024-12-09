@@ -93,6 +93,9 @@ importers:
       vite:
         specifier: ^6.0.0
         version: 6.0.2(@types/node@22.10.1)(jiti@1.21.6)(yaml@2.6.1)
+      wrangler:
+        specifier: ^3.93.0
+        version: 3.93.0(@cloudflare/workers-types@4.20241205.0)
 
 packages:
 
