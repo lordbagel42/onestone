@@ -3,6 +3,7 @@
 	import quiltSpreadsheet from '$lib/resources/quilt/quiltSpreadsheet.png';
 
 	import PopupPhoto from '$lib/components/popupPhoto.svelte';
+	import Link from '$lib/components/link.svelte';
 </script>
 
 <div class="mx-auto max-w-4xl rounded-lg p-8">
@@ -22,13 +23,15 @@
 		<PopupPhoto title="Quilt Spreadsheet" src={quiltSpreadsheet} alt="Quilt spreadsheet" />
 
 		<p class="mt-4 text-lg leading-relaxed">
-			I spent a lot of time developing a spreadsheet to track my material usage, requirements, and
-			quilt status. To gather initial data, I used <a
-				class="hyperlink"
-				href="https://patternjam.com/">Patternjam</a
-			>. I also used Google Sheets to track progress and material usage/status while quilting. I
-			could already make a decent quilt so I use this as an opportunity to practice using Google
-			Sheets.
+			I spent a lot of time developing a
+			<Link
+				href="https://docs.google.com/spreadsheets/d/1azQjdcOIJ6puB7tlv8clFVlMcvkn8ak4cHtl3jlBPD8/edit?usp=sharing"
+				>spreadsheet</Link
+			>
+			to track my material usage, requirements, and quilt status. To gather initial data, I used
+			<Link href="https://patternjam.com/">Patternjam</Link>. I also used Google Sheets to track
+			progress and material usage/status while quilting. I could already make a decent quilt so I
+			use this as an opportunity to practice using Google Sheets.
 		</p>
 	</section>
 
@@ -55,7 +58,7 @@
 	<section class="mb-8">
 		<p class="text-lg leading-relaxed">
 			Overall, I enjoyed the experience. I learned a lot about quilting and design, and I got to
-			learn about a new art form. I also got to practice using Google Sheets, which was a plus.
+			learn about a semi-new art form. I also got to practice using Google Sheets, which was a plus.
 		</p>
 	</section>
 </div>
