@@ -32,8 +32,8 @@
 		onclick={closePopup}
 		onkeydown={(e) => e.key === 'Enter' && closePopup()}
 	>
-		<div class="relative h-3/4 w-3/4">
-			<img class="h-full w-full rounded-lg shadow-lg" {src} {alt} />
+		<div class="relative max-h-full max-w-full">
+			<img class="max-h-full max-w-full rounded-lg object-contain shadow-lg" {src} {alt} />
 			<h2
 				class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-2xl font-semibold text-white"
 			>

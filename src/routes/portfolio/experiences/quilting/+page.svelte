@@ -22,13 +22,15 @@
 		<PopupPhoto title="Quilt Spreadsheet" src={quiltSpreadsheet} alt="Quilt spreadsheet" />
 
 		<p class="mt-4 text-lg leading-relaxed">
-			I spent a lot of time developing a spreadsheet to track my material usage, requirements, and
-			quilt status. To gather initial data, I used <a
+			I spent a lot of time developing a <a
 				class="hyperlink"
-				href="https://patternjam.com/">Patternjam</a
-			>. I also used Google Sheets to track progress and material usage/status while quilting. I
-			could already make a decent quilt so I use this as an opportunity to practice using Google
-			Sheets.
+				href="https://docs.google.com/spreadsheets/d/1azQjdcOIJ6puB7tlv8clFVlMcvkn8ak4cHtl3jlBPD8/edit?usp=sharing"
+				>spreadsheet</a
+			>
+			to track my material usage, requirements, and quilt status. To gather initial data, I used
+			<a class="hyperlink" href="https://patternjam.com/">Patternjam</a>. I also used Google Sheets
+			to track progress and material usage/status while quilting. I could already make a decent
+			quilt so I use this as an opportunity to practice using Google Sheets.
 		</p>
 	</section>
 
