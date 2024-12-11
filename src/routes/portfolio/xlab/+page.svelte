@@ -3,6 +3,9 @@
 	import ArticleRoot from '$lib/components/article/article-root.svelte';
 	import ArticleSection from '$lib/components/article/article-section.svelte';
 	import ArticleCols from '$lib/components/article/article-cols.svelte';
+
+	import peeps from '$lib/resources/xlab/peeps.jpg';
+	import PopupPhoto from '$lib/components/popupPhoto.svelte';
 </script>
 
 <ArticleRoot title="XLab">
@@ -49,10 +52,10 @@
 			{/snippet}
 
 			{#snippet right()}
-				<img
-					src="https://source.unsplash.com/random/800x600?biking"
-					alt="Team presenting at Peeps on the Street"
-					class="rounded-lg shadow-md"
+				<PopupPhoto
+					title="Presenting at Peeps on the Street"
+					src={peeps}
+					alt="Presenting at Peeps on the Street"
 				/>
 			{/snippet}
 		</ArticleCols>
