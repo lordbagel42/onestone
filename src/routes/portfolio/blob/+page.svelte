@@ -5,7 +5,7 @@
 	import PopupPhoto from '$lib/components/popupPhoto.svelte';
 	import ArticleCols from '$lib/components/article/article-cols.svelte';
 
-	import blob from '$lib/resources/blob/OneStoneBLOB-v6.png';
+	import blob from '$lib/resources/blob/OneStoneBLOB-v6.png?enhanced';
 </script>
 
 <ArticleRoot title="The BLOB">

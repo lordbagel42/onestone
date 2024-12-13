@@ -1,6 +1,6 @@
 <script lang="ts">
-	import quiltDesign from '$lib/resources/quilt/quiltDesign.png';
-	import quiltSpreadsheet from '$lib/resources/quilt/quiltSpreadsheet.png';
+	import quiltDesign from '$lib/resources/quilt/quiltDesign.png?enhanced';
+	import quiltSpreadsheet from '$lib/resources/quilt/quiltSpreadsheet.png?enhanced';
 
 	import PopupPhoto from '$lib/components/popupPhoto.svelte';
 	import Link from '$lib/components/link.svelte';

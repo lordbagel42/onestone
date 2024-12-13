@@ -4,7 +4,7 @@
 	import ArticleSection from '$lib/components/article/article-section.svelte';
 	import ArticleCols from '$lib/components/article/article-cols.svelte';
 
-	import peeps from '$lib/resources/xlab/peeps.jpg';
+	import peeps from '$lib/resources/xlab/peeps.jpg?enhanced';
 	import PopupPhoto from '$lib/components/popupPhoto.svelte';
 </script>
 
