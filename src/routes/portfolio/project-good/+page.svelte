@@ -7,12 +7,11 @@
 
 	import * as Carousel from '$lib/components/ui/carousel/index';
 
-	import { Image } from '@unpic/svelte';
+	import tires from '$lib/resources/project-good/tires.png?enhanced';
 
-	import tires from '$lib/resources/project-good/tires.png';
-	import fenceTrampoline from '$lib/resources/project-good/fenceTrampoline.png';
-	import fenceSwing from '$lib/resources/project-good/fenceSwing.png';
-	import fenceGate from '$lib/resources/project-good/fenceGate.png';
+	import fenceTrampoline from '$lib/resources/project-good/fenceTrampoline.png?enhanced';
+	import fenceSwing from '$lib/resources/project-good/fenceSwing.png?enhanced';
+	import fenceGate from '$lib/resources/project-good/fenceGate.png?enhanced';
 </script>
 
 <ArticleRoot title="Foundry Project Good">
@@ -50,21 +49,21 @@
 		<Carousel.Root>
 			<Carousel.Content>
 				<Carousel.Item>
-					<Image
+					<enhanced:img
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
 						src={fenceTrampoline}
 						alt="Long part of the fence"
 					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<Image
+					<enhanced:img
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
 						src={fenceGate}
 						alt="The gate"
 					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<Image
+					<enhanced:img
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
 						src={fenceSwing}
 						alt="Tall part of fence"
