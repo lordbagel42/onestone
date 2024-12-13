@@ -84,7 +84,7 @@
 			tires available for us to take. Our plan is to bury these a bit in the ground and have
 			somewhere for the children to play.
 		</ArticleParagraph>
-		<PopupPhoto title="Tires" src={tires} alt="Tires" height={1000} width={800} />
+		<PopupPhoto title="Tires" src={tires} alt="Tires" />
 	</ArticleSection>
 
 	<ArticleSection>
