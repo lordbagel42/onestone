@@ -7,6 +7,8 @@
 
 	import * as Carousel from '$lib/components/ui/carousel/index';
 
+	import { Image } from '@unpic/svelte';
+
 	import tires from '$lib/resources/project-good/tires.png';
 	import fenceTrampoline from '$lib/resources/project-good/fenceTrampoline.png';
 	import fenceSwing from '$lib/resources/project-good/fenceSwing.png';
@@ -48,21 +50,21 @@
 		<Carousel.Root>
 			<Carousel.Content>
 				<Carousel.Item>
-					<img
+					<Image
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
 						src={fenceTrampoline}
 						alt="Long part of the fence"
 					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img
+					<Image
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
 						src={fenceGate}
 						alt="The gate"
 					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img
+					<Image
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
 						src={fenceSwing}
 						alt="Tall part of fence"
@@ -82,7 +84,7 @@
 			tires available for us to take. Our plan is to bury these a bit in the ground and have
 			somewhere for the children to play.
 		</ArticleParagraph>
-		<PopupPhoto title="Tires" src={tires} alt="Tires" />
+		<PopupPhoto title="Tires" src={tires} alt="Tires" height={1000} width={800} />
 	</ArticleSection>
 
 	<ArticleSection>
