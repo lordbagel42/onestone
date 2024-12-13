@@ -12,6 +12,7 @@ import {
 	CircleHelp,
 	HousePlus,
 	LoaderPinwheel,
+	SquareArrowUp,
 	TestTubeDiagonal
 } from 'lucide-svelte';
 
@@ -33,6 +34,12 @@ export const navBar: NavItem[] = [
 		url: '/portfolio/about',
 		selected: false,
 		icon: House
+	},
+	{
+		title: 'The BLOB',
+		url: '/portfolio/blob',
+		selected: false,
+		icon: SquareArrowUp
 	},
 	{
 		title: 'Experiences',
