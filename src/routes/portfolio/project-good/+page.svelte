@@ -7,8 +7,6 @@
 
 	import * as Carousel from '$lib/components/ui/carousel/index';
 
-	import tires from '$lib/resources/project-good/tires.png?enhanced';
-
 	import fenceTrampoline from '$lib/resources/project-good/fenceTrampoline.png?enhanced';
 	import fenceSwing from '$lib/resources/project-good/fenceSwing.png?enhanced';
 	import fenceGate from '$lib/resources/project-good/fenceGate.png?enhanced';
@@ -83,7 +81,7 @@
 			tires available for us to take. Our plan is to bury these a bit in the ground and have
 			somewhere for the children to play.
 		</ArticleParagraph>
-		<PopupPhoto title="Tires" src={tires} alt="Tires" />
+		<!-- <PopupPhoto title="Tires" src={tires} alt="Tires" /> -->
 	</ArticleSection>
 
 	<ArticleSection>
