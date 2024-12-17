@@ -7,7 +7,7 @@
 
 	import * as Carousel from '$lib/components/ui/carousel/index';
 
-	import tires from '$lib/resources/project-good/tires.png?enhanced';
+	import tires from '$lib/resources/project-good/tiresnew.png?enhanced';
 
 	import fenceTrampoline from '$lib/resources/project-good/fenceTrampoline.png?enhanced';
 	import fenceSwing from '$lib/resources/project-good/fenceSwing.png?enhanced';
