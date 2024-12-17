@@ -12,6 +12,7 @@ import {
 	CircleHelp,
 	HousePlus,
 	LoaderPinwheel,
+	SquareArrowUp,
 	TestTubeDiagonal
 } from 'lucide-svelte';
 
@@ -33,6 +34,12 @@ export const navBar: NavItem[] = [
 		url: '/portfolio/about',
 		selected: false,
 		icon: House
+	},
+	{
+		title: 'The BLOB',
+		url: '/portfolio/blob',
+		selected: false,
+		icon: SquareArrowUp
 	},
 	{
 		title: 'Experiences',
@@ -72,21 +79,21 @@ export const navBar: NavItem[] = [
 		selected: false,
 		icon: Calculator
 	},
+	// {
+	// 	title: 'Living in Beta',
+	// 	url: '/portfolio/living-in-beta',
+	// 	selected: false,
+	// 	icon: HousePlus
+	// },
+	// {
+	// 	title: 'Flex Lab',
+	// 	url: '/portfolio/flex-lab',
+	// 	selected: false,
+	// 	icon: TestTubeDiagonal
+	// },
 	{
-		title: 'Living in Beta',
-		url: '/portfolio/living-in-beta',
-		selected: false,
-		icon: HousePlus
-	},
-	{
-		title: 'Flex Lab',
-		url: '/portfolio/flex-lab',
-		selected: false,
-		icon: TestTubeDiagonal
-	},
-	{
-		title: 'Miscellaneous Info',
-		url: '/portfolio/misc',
+		title: 'Robotics',
+		url: '/portfolio/robotics',
 		selected: false,
 		icon: CircleHelp
 	}

@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	let { title, src, alt }: { title: string; src: string; alt: string } = $props();
+	import { Image } from '@unpic/svelte';
+
+	let { title, src, alt }: { title: string; src: any; alt: string } = $props();
 	let isOpen = $state(false);
 
 	const openPopup = () => {
@@ -20,7 +22,7 @@
 	onclick={openPopup}
 	onkeydown={(e) => e.key === 'Enter' && openPopup()}
 >
-	<img class="h-full w-full rounded-lg shadow-lg" {src} {alt} />
+	<enhanced:img class="h-full w-full rounded-lg shadow-lg" {src} {alt} />
 </div>
 
 {#if isOpen}
@@ -33,7 +35,12 @@
 		onkeydown={(e) => e.key === 'Enter' && closePopup()}
 	>
 		<div class="relative max-h-full max-w-full">
-			<img class="max-h-full max-w-full rounded-lg object-contain shadow-lg" {src} {alt} />
+			<enhanced:img
+				class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
+				{src}
+				{alt}
+				style="aspect-ratio: auto;"
+			/>
 			<h2
 				class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4 text-2xl font-semibold text-white"
 			>
