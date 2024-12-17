@@ -79,21 +79,21 @@ export const navBar: NavItem[] = [
 		selected: false,
 		icon: Calculator
 	},
+	// {
+	// 	title: 'Living in Beta',
+	// 	url: '/portfolio/living-in-beta',
+	// 	selected: false,
+	// 	icon: HousePlus
+	// },
+	// {
+	// 	title: 'Flex Lab',
+	// 	url: '/portfolio/flex-lab',
+	// 	selected: false,
+	// 	icon: TestTubeDiagonal
+	// },
 	{
-		title: 'Living in Beta',
-		url: '/portfolio/living-in-beta',
-		selected: false,
-		icon: HousePlus
-	},
-	{
-		title: 'Flex Lab',
-		url: '/portfolio/flex-lab',
-		selected: false,
-		icon: TestTubeDiagonal
-	},
-	{
-		title: 'Miscellaneous Info',
-		url: '/portfolio/misc',
+		title: 'Robotics',
+		url: '/portfolio/robotics',
 		selected: false,
 		icon: CircleHelp
 	}

@@ -27,11 +27,10 @@
 
 	<ArticleSection>
 		<ArticleParagraph>
-			I learned a lot about how the psychology behind games works, things like how <Link href="#"
-				>the psychology behind gambling</Link
-			> works and a lot more. The math behind games was also very interesting to me, but I was reaching
-			for more of a social science credit over a math credit. I struggled a lot with actually focusing
-			on the social science and not on the math behind things.
+			I learned a lot about how the psychology behind games works, things like how the psychology
+			behind gambling works and a lot more. The math behind games was also very interesting to me,
+			but I was reaching for more of a social science credit over a math credit. I struggled a lot
+			with actually focusing on the social science and not on the math behind things.
 		</ArticleParagraph>
 	</ArticleSection>
 
