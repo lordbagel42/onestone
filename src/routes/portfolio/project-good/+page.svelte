@@ -94,9 +94,10 @@
 
 	<ArticleSection>
 		<ArticleParagraph>
-			I don't think I've actually grown much in the BLOB with this project good, mostly because we
-			haven't done much of anything. This isn't anyone's individual fault, just a lack of proposals
-			given and manpower to execute them.
+			I've grown a lot in empathy and leadership in my time with this Project Good team. I have put
+			a lot of effort into taking a step back and trying to give others the opportunity to lead,
+			rather than just take it myself. However, if nobody steps up there have been multiple times
+			where I take the leadership role myself.
 		</ArticleParagraph>
 	</ArticleSection>
 </ArticleRoot>
