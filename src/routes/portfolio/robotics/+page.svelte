@@ -15,14 +15,14 @@
 		<ArticleParagraph>
 			Robotics has been a large part of my education for quite a while. Since I was a kid in
 			elementary school I wanted a job doing something with robots. I wasn't sure what, but just
-			something. When I went to TVMSC, I ended up joining the First Robotics Competition team 2122,
-			Team Tators.
+			something. When I went to MATH SCHOOL, I ended up joining the First Robotics Competition team
+			2122, Team Tators.
 		</ArticleParagraph>
 	</ArticleSection>
 
 	<ArticleSection>
 		<ArticleParagraph>
-			Part of why I ended up joining One Stone was talking to Josie about their First Robotics
+			Part of why I ended up joining SCHOOL was talking to COACH about their First Robotics
 			Competition team, Quackers. During Disruption Night, she told me that she really wanted to
 			have another person who was able to mentor it and I really wanted to help with that.
 		</ArticleParagraph>
@@ -40,8 +40,8 @@
 	<ArticleSection>
 		<ArticleParagraph>
 			Tators is a very high stakes and high performance team. I don't really get the ability to be
-			making mistakes. On Quackers, I get to teach other One Stone students, my friends, how to make
-			a good robot and how to use the tools available to us to their full potential.
+			making mistakes. On Quackers, I get to teach other SCHOOL students, my friends, how to make a
+			good robot and how to use the tools available to us to their full potential.
 		</ArticleParagraph>
 	</ArticleSection>
 

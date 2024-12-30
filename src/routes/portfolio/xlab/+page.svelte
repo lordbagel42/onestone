@@ -18,7 +18,7 @@
 
 	<ArticleSection>
 		<ArticleParagraph>
-			My team, made up of Arielle, Avary, Jackson, and myself, created a group within this to focus
+			My team, made up of PEER 1, PEER 2, PEER 3, and myself, created a group within this to focus
 			on biking.
 		</ArticleParagraph>
 	</ArticleSection>
@@ -52,11 +52,7 @@
 			{/snippet}
 
 			{#snippet right()}
-				<PopupPhoto
-					title="Presenting at Peeps on the Street"
-					src={peeps}
-					alt="Presenting at Peeps on the Street"
-				/>
+				<img src="https://placehold.co/600x400/EEE/31343C" alt="" />
 			{/snippet}
 		</ArticleCols>
 	</ArticleSection>

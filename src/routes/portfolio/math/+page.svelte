@@ -52,7 +52,7 @@
 		<ArticleParagraph>
 			This is an excerpt from my slideshow. Most of the slideshow was just notes about paper
 			worksheets I did and this was the best visual I had, rather than just notes about
-			communicating with Josie.
+			communicating with COACH.
 			<PopupPhoto src={quadraticForms} alt="Quadratic Forms" title="Quadratic Forms" />
 		</ArticleParagraph>
 	</ArticleSection>
@@ -61,7 +61,7 @@
 		<ArticleParagraph>
 			I tried to practice my Applied Mathematics here, but there was no new content shown, only
 			content I already knew shown in a different way, often slower. I think it was a good
-			introduction to the idea of a One Stone portfolio, though.
+			introduction to the idea of a SCHOOL portfolio, though.
 		</ArticleParagraph>
 	</ArticleSection>
 </ArticleRoot>
