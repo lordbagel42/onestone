@@ -55,7 +55,7 @@
 	<ArticleSection>
 		<ArticleParagraph>
 			I faced some challenges in sourcing fabrics with the specific colors I needed. I sought advice
-			from my grandma and COACH, who suggested things like making an 8-foot-long quilt might not be
+			from my grandma and Emily, who suggested things like making an 8-foot-long quilt might not be
 			the best idea.
 		</ArticleParagraph>
 	</ArticleSection>

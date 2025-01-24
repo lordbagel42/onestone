@@ -7,7 +7,7 @@
 	<div class="flex h-2/5 w-full items-center justify-center md:h-auto md:w-1/2">
 		<div class="relative flex items-center justify-center">
 			<h1 class="animate-gradient absolute text-center text-5xl font-bold md:text-7xl lg:text-9xl">
-				Sylvie LASTNAME
+				Sylvie Rupe
 			</h1>
 		</div>
 	</div>
@@ -22,7 +22,8 @@
 				Robotics
 			</h2>
 			<p class="text-base md:text-lg lg:text-xl">
-				I work with the SCHOOL robotics team weekly, teaching engineering and programming to them.
+				I work with the One Stone robotics team weekly, teaching engineering and programming to
+				them.
 			</p>
 		</div>
 
