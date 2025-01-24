@@ -12,7 +12,7 @@
 <ArticleRoot title="Games">
 	<ArticleSection>
 		<ArticleParagraph>
-			I missed a pretty good amount of the games experience with COACH. I faced a lot of struggles
+			I missed a pretty good amount of the games experience with Josie. I faced a lot of struggles
 			because of my lack of being there, but overall I had a good time.
 		</ArticleParagraph>
 	</ArticleSection>

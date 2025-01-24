@@ -13,19 +13,13 @@
 		{ text: 'Do what you can, with what you have, where you are.', author: 'Theodore Roosevelt' },
 		{ text: 'Simplicity is the ultimate sophistication.', author: 'Leonardo da Vinci' },
 		{ text: 'The best way to predict the future is to create it.', author: 'Abraham Lincoln' },
-		{
-			text: "No ship has sailed too far if you're a really fast swimmer.",
-			author: 'Sylvie LASTNAME'
-		},
+		{ text: "No ship has sailed too far if you're a really fast swimmer.", author: 'Sylvie Rupe' },
 		{
 			text: 'The only limit to our realization of tomorrow is our doubts of today.',
 			author: 'Franklin D. Roosevelt'
 		},
 		{ text: 'Maintain a healthy fear of what can go wrong', author: 'Detrich R.' },
-		{
-			text: 'Not all who wander are lost, but this robot is awfully close',
-			author: 'Sylvie LASTNAME'
-		}
+		{ text: 'Not all who wander are lost, but this robot is awfully close', author: 'Sylvie Rupe' }
 	];
 
 	function updateQuote() {

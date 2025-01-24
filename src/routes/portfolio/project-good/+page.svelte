@@ -17,7 +17,7 @@
 <ArticleRoot title="Foundry Project Good">
 	<ArticleSection>
 		<ArticleParagraph>
-			I actually didn't start Project Good as part of COACH's Foundry group. I started with COACH's
+			I actually didn't start Project Good as part of Sam's Foundry group. I started with Jordi's
 			cooking group, but ended up having to cancel that because of scheduling conflicts
 		</ArticleParagraph>
 	</ArticleSection>
@@ -33,9 +33,9 @@
 	<ArticleSection>
 		<ArticleParagraph>
 			We've been having a lot of difficulty with actually finding a project to do. Essentially, the
-			Foundry project good team's goal is to use SCHOOL's foundry to try and bring about change or
-			create something that betters someone else's life. Previously, they built a swingset safe for
-			an autistic child, a tiny house, etc.
+			Foundry project good team's goal is to use One Stone's foundry to try and bring about change
+			or create something that betters someone else's life. Previously, they built a swingset safe
+			for an autistic child, a tiny house, etc.
 		</ArticleParagraph>
 	</ArticleSection>
 
@@ -44,28 +44,28 @@
 			We were recently given the proposal to extend the height of a fence. The owners of the
 			property have an autistic child who likes to play outside but doesn't understand the danger of
 			leaving the backyard, but don't have the resources to build the fence themselves. They reached
-			out to us through PEER to try and work something out.
+			out to us through Easton to try and work something out.
 		</ArticleParagraph>
 		<Carousel.Root>
 			<Carousel.Content>
 				<Carousel.Item>
-					<img
+					<enhanced:img
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
-						src="https://placehold.co/800x800/EEE/31343C"
+						src={fenceTrampoline}
 						alt="Long part of the fence"
 					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img
+					<enhanced:img
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
-						src="https://placehold.co/800x800/EEE/31343C"
+						src={fenceGate}
 						alt="The gate"
 					/>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img
+					<enhanced:img
 						class="max-h-full max-w-full rounded-lg object-contain shadow-lg"
-						src="https://placehold.co/800x800/EEE/31343C"
+						src={fenceSwing}
 						alt="Tall part of fence"
 					/>
 				</Carousel.Item>
@@ -83,7 +83,7 @@
 			tires available for us to take. Our plan is to bury these a bit in the ground and have
 			somewhere for the children to play.
 		</ArticleParagraph>
-		<img src="https://placehold.co/800x800/EEE/31343C" alt="Tires" />
+		<PopupPhoto title="Tires" src={tires} alt="Tires" />
 	</ArticleSection>
 
 	<ArticleSection>

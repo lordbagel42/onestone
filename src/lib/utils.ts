@@ -13,7 +13,8 @@ import {
 	HousePlus,
 	LoaderPinwheel,
 	SquareArrowUp,
-	TestTubeDiagonal
+	TestTubeDiagonal,
+	CircuitBoard
 } from 'lucide-svelte';
 
 export function cn(...inputs: ClassValue[]) {
@@ -79,12 +80,20 @@ export const navBar: NavItem[] = [
 		selected: false,
 		icon: Calculator
 	},
-	// {
-	// 	title: 'Living in Beta',
-	// 	url: '/portfolio/living-in-beta',
-	// 	selected: false,
-	// 	icon: HousePlus
-	// },
+	{
+		title: 'Living in Beta',
+		url: '/portfolio/living-in-beta',
+		selected: false,
+		icon: HousePlus,
+		items: [
+			{
+				title: 'Business Board',
+				url: '/portfolio/living-in-beta/business-board',
+				selected: false,
+				icon: CircuitBoard
+			}
+		]
+	},
 	// {
 	// 	title: 'Flex Lab',
 	// 	url: '/portfolio/flex-lab',
