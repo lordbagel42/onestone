@@ -14,7 +14,38 @@
 		<PopupPhoto title="Business Board" alt="My Business Board" src={boardimg} />
 	</ArticleSection>
 	<ArticleSection>
-		<ArticleParagraph>Me business board</ArticleParagraph>
-		<ArticleParagraph>its a board</ArticleParagraph>
+		<ArticleParagraph>
+			My goal with my career is to do a job somewhere in tech. I really like watching lights blink
+			on things and have the knowledge I made that happen. I have spent most of my life working with
+			computers and technology.
+		</ArticleParagraph>
+	</ArticleSection>
+	<ArticleSection>
+		<ArticleParagraph>
+			The jobs I made this business board off of are the following:
+
+			<ul class="ml-4 list-inside list-disc">
+				<li>Audio Engineer</li>
+				<li>Lighting Designer</li>
+				<li>System Administrator</li>
+				<li>Machinist</li>
+				<li>Programmer</li>
+				<li>Software Engineer</li>
+				<li>Site Reliability Engineer</li>
+				<li>Database Administrator</li>
+				<li>Production</li>
+			</ul>
+		</ArticleParagraph>
+	</ArticleSection>
+
+	<ArticleSection>
+		<ArticleParagraph>
+			All of these share a common theme of working with technology and either alone or in very small
+			groups, with high stakes. Most of the administrator and engineer jobs are able to be done
+			remotely from home, something I really like the idea of. Production and machining however, I
+			would have to go in person for, but still work in relatively small, tight-knit teams. Most of
+			these jobs are things I either have done in the past or know something about and find very
+			interesting.
+		</ArticleParagraph>
 	</ArticleSection>
 </ArticleRoot>
