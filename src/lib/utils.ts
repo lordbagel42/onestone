@@ -14,7 +14,9 @@ import {
 	LoaderPinwheel,
 	SquareArrowUp,
 	TestTubeDiagonal,
-	CircuitBoard
+	CircuitBoard,
+	Clover,
+	Figma
 } from 'lucide-svelte';
 
 export function cn(...inputs: ClassValue[]) {
@@ -66,7 +68,21 @@ export const navBar: NavItem[] = [
 		title: 'XLAB',
 		url: '/portfolio/xlab',
 		selected: false,
-		icon: LoaderPinwheel
+		icon: LoaderPinwheel,
+		items: [
+			{
+				title: 'An Overview',
+				url: '/portfolio/xlab/overview',
+				selected: false,
+				icon: Clover
+			},
+			{
+				title: 'Design Showcase',
+				url: '/portfolio/xlab/design-showcase',
+				selected: false,
+				icon: Figma
+			}
+		]
 	},
 	{
 		title: 'Project Good',
@@ -78,7 +94,21 @@ export const navBar: NavItem[] = [
 		title: 'Math',
 		url: '/portfolio/math',
 		selected: false,
-		icon: Calculator
+		icon: Calculator,
+		items: [
+			{
+				title: 'Polynomials',
+				url: '/portfolio/math/polynomials',
+				selected: false,
+				icon: Calculator
+			},
+			{
+				title: 'Statistics',
+				url: '/portfolio/math/statistics',
+				selected: false,
+				icon: SquareArrowUp
+			}
+		]
 	},
 	{
 		title: 'Living in Beta',
@@ -121,4 +151,4 @@ export const currentPage = (item: NavItem): boolean => {
 	console.log(item);
 	console.log(navBar);
 	return true;
-}
+};
