@@ -7,6 +7,7 @@
 	import peeps from '$lib/resources/xlab/peeps.jpg?enhanced';
 	import SignStand from '$lib/resources/xlab/SignStand.png?enhanced';
 	import PopupPhoto from '$lib/components/popupPhoto.svelte';
+	import ArticleSmall from '$lib/components/article/article-small.svelte';
 
 	let hr = true;
 </script>
@@ -130,11 +131,11 @@
 			{#snippet left()}
 				<ArticleParagraph>
 					Art Bombs are a way to create temporary signage that is not permanent and can be moved
-					easily. This was a great idea for us, as we were able to create a lot of different signage
-					and test it out in the real world. I designed a simple sign to be constructed out of wood
-					and placed along the greenbelt, shown to the right. This is the back side of the sign. We
-					are not sure we'll keep the translucent piece on the back to show our information, and may
-					not mark it as ours at all.
+					easily. This was a great idea for us, as we were not allowed to install permanent signs
+					and enjoy how easily things can be moved. I designed a simple sign to be constructed out
+					of wood and placed along the greenbelt, shown to the right. This is the back side of the
+					sign. We are not sure we'll keep the translucent piece on the back to show our
+					information, and may not mark it as ours at all.
 				</ArticleParagraph>
 			{/snippet}
 
@@ -149,6 +150,19 @@
 			life.
 		</ArticleParagraph>
 	</ArticleSection>
+
+	<ArticleSection {hr} heading="Design Lab Showcase">
+		<ArticleSmall>(the spring one specifically)</ArticleSmall>
+		<ArticleParagraph>
+			My team had a really easy time at the showcase, honestly. We wrote the script in about a day
+			and didn't need to do much editing to it, it was pretty much ready to go. We could've done
+			better for sure, but we work together so well that we could cue each other in intuitively and
+			without much effort. I am very proud of how my team did and our audience seemed to enjoy the
+			presentation. We had one individual tell us that we were speaking too fast, but this caused a
+			dozen or so others to come and talk to us and complimentz our presenting skills.
+		</ArticleParagraph>
+	</ArticleSection>
+
 	<ArticleSection {hr} heading="An Ending">
 		<ArticleParagraph>
 			XLab was a great experience for me this year. I learned a lot about the human centered design
