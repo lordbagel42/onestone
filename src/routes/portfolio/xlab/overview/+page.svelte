@@ -3,11 +3,11 @@
 	import ArticleRoot from '$lib/components/article/article-root.svelte';
 	import ArticleSection from '$lib/components/article/article-section.svelte';
 	import ArticleCols from '$lib/components/article/article-cols.svelte';
+	import ArticleSmall from '$lib/components/article/article-small.svelte';
 
 	import peeps from '$lib/resources/xlab/peeps.jpg?enhanced';
 	import SignStand from '$lib/resources/xlab/SignStand.png?enhanced';
 	import PopupPhoto from '$lib/components/popupPhoto.svelte';
-	import ArticleSmall from '$lib/components/article/article-small.svelte';
 
 	let hr = true;
 </script>

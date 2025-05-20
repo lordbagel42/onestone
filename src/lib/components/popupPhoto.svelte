@@ -6,7 +6,9 @@
 	let isOpen = $state(false);
 
 	const openPopup = () => {
-		console.log('openPopup');
+		// i don't want to pollute the console lmao
+		// this has been left here for so freaking long
+		// console.log('openPopup');
 		isOpen = true;
 	};
 
