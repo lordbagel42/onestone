@@ -14,7 +14,11 @@ import {
 	LoaderPinwheel,
 	SquareArrowUp,
 	TestTubeDiagonal,
-	CircuitBoard
+	CircuitBoard,
+	Clover,
+	Figma,
+	SprayCan,
+	ShellIcon
 } from 'lucide-svelte';
 
 export function cn(...inputs: ClassValue[]) {
@@ -66,19 +70,65 @@ export const navBar: NavItem[] = [
 		title: 'XLAB',
 		url: '/portfolio/xlab',
 		selected: false,
-		icon: LoaderPinwheel
+		icon: LoaderPinwheel,
+		items: [
+			{
+				title: 'An Overview',
+				url: '/portfolio/xlab/overview',
+				selected: false,
+				icon: Clover
+			}
+			// i don't *really* need to have this separate.
+			// probably better honestly, but i don't care.
+			// easier to just have it as part of it
+			// and only write a paragraph lmao.
+			// {
+			// 	title: 'Design Showcase',
+			// 	url: '/portfolio/xlab/design-showcase',
+			// 	selected: false,
+			// 	icon: Figma
+			// }
+		]
 	},
 	{
 		title: 'Project Good',
 		url: '/portfolio/project-good',
 		selected: false,
-		icon: Laugh
+		icon: Laugh,
+		items: [
+			{
+				title: 'Spring',
+				url: '/portfolio/project-good/spring',
+				selected: false,
+				icon: SprayCan
+			},
+			{
+				title: 'Recent Shenanigans',
+				url: '/portfolio/project-good/recent',
+				selected: false,
+				icon: ShellIcon
+			}
+		]
 	},
 	{
 		title: 'Math',
 		url: '/portfolio/math',
 		selected: false,
-		icon: Calculator
+		icon: Calculator,
+		items: [
+			{
+				title: 'Polynomials',
+				url: '/portfolio/math/polynomials',
+				selected: false,
+				icon: Calculator
+			},
+			{
+				title: 'Statistics',
+				url: '/portfolio/math/statistics',
+				selected: false,
+				icon: SquareArrowUp
+			}
+		]
 	},
 	{
 		title: 'Living in Beta',
@@ -101,6 +151,26 @@ export const navBar: NavItem[] = [
 	// 	icon: TestTubeDiagonal
 	// },
 	{
+		title: 'My Shenanigans',
+		url: '/portfolio/shenanigans',
+		selected: false,
+		icon: Laugh,
+		items: [
+			{
+				title: 'Shenanigan 1',
+				url: '/portfolio/shenanigans/shenanigan-1',
+				selected: false,
+				icon: Laugh
+			},
+			{
+				title: 'Shenanigan 2',
+				url: '/portfolio/shenanigans/shenanigan-2',
+				selected: false,
+				icon: Laugh
+			}
+		]
+	},
+	{
 		title: 'Robotics',
 		url: '/portfolio/robotics',
 		selected: false,
@@ -121,4 +191,4 @@ export const currentPage = (item: NavItem): boolean => {
 	console.log(item);
 	console.log(navBar);
 	return true;
-}
+};
