@@ -75,13 +75,17 @@ export const navBar: NavItem[] = [
 				url: '/portfolio/xlab/overview',
 				selected: false,
 				icon: Clover
-			},
-			{
-				title: 'Design Showcase',
-				url: '/portfolio/xlab/design-showcase',
-				selected: false,
-				icon: Figma
 			}
+			// i don't *really* need to have this separate.
+			// probably better honestly, but i don't care.
+			// easier to just have it as part of it
+			// and only write a paragraph lmao.
+			// {
+			// 	title: 'Design Showcase',
+			// 	url: '/portfolio/xlab/design-showcase',
+			// 	selected: false,
+			// 	icon: Figma
+			// }
 		]
 	},
 	{
@@ -130,6 +134,26 @@ export const navBar: NavItem[] = [
 	// 	selected: false,
 	// 	icon: TestTubeDiagonal
 	// },
+	{
+		title: 'My Shenanigans',
+		url: '/portfolio/shenanigans',
+		selected: false,
+		icon: Laugh,
+		items: [
+			{
+				title: 'Shenanigan 1',
+				url: '/portfolio/shenanigans/shenanigan-1',
+				selected: false,
+				icon: Laugh
+			},
+			{
+				title: 'Shenanigan 2',
+				url: '/portfolio/shenanigans/shenanigan-2',
+				selected: false,
+				icon: Laugh
+			}
+		]
+	},
 	{
 		title: 'Robotics',
 		url: '/portfolio/robotics',
