@@ -93,26 +93,26 @@ export const navBar: NavItem[] = [
 			// }
 		]
 	},
-	{
-		title: 'Community Reads',
-		url: '/portfolio/community-reads',
-		selected: false,
-		icon: BookDashed,
-		items: [
-			{
-				title: 'Rebel Talent',
-				url: '/portfolio/community-reads/rebel-talent',
-				selected: false,
-				icon: BookA
-			},
-			{
-				title: 'Healing Grounds',
-				url: '/portfolio/community-reads/healing-grounds',
-				selected: false,
-				icon: Book
-			}
-		]
-	},
+	// {
+	// 	title: 'Community Reads',
+	// 	url: '/portfolio/community-reads',
+	// 	selected: false,
+	// 	icon: BookDashed,
+	// 	items: [
+	// 		{
+	// 			title: 'Rebel Talent',
+	// 			url: '/portfolio/community-reads/rebel-talent',
+	// 			selected: false,
+	// 			icon: BookA
+	// 		},
+	// 		{
+	// 			title: 'Healing Grounds',
+	// 			url: '/portfolio/community-reads/healing-grounds',
+	// 			selected: false,
+	// 			icon: Book
+	// 		}
+	// 	]
+	// },
 	{
 		title: 'Project Good',
 		url: '/portfolio/project-good',
