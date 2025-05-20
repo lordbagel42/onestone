@@ -16,7 +16,9 @@ import {
 	TestTubeDiagonal,
 	CircuitBoard,
 	Clover,
-	Figma
+	Figma,
+	SprayCan,
+	ShellIcon
 } from 'lucide-svelte';
 
 export function cn(...inputs: ClassValue[]) {
@@ -92,7 +94,21 @@ export const navBar: NavItem[] = [
 		title: 'Project Good',
 		url: '/portfolio/project-good',
 		selected: false,
-		icon: Laugh
+		icon: Laugh,
+		items: [
+			{
+				title: 'Spring',
+				url: '/portfolio/project-good/spring',
+				selected: false,
+				icon: SprayCan
+			},
+			{
+				title: 'Recent Shenanigans',
+				url: '/portfolio/project-good/recent',
+				selected: false,
+				icon: ShellIcon
+			}
+		]
 	},
 	{
 		title: 'Math',
