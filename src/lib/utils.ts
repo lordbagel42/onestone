@@ -18,7 +18,10 @@ import {
 	Clover,
 	Figma,
 	SprayCan,
-	ShellIcon
+	ShellIcon,
+	BookDashed,
+	BookA,
+	Book
 } from 'lucide-svelte';
 
 export function cn(...inputs: ClassValue[]) {
@@ -88,6 +91,26 @@ export const navBar: NavItem[] = [
 			// 	selected: false,
 			// 	icon: Figma
 			// }
+		]
+	},
+	{
+		title: 'Community Reads',
+		url: '/portfolio/community-reads',
+		selected: false,
+		icon: BookDashed,
+		items: [
+			{
+				title: 'Rebel Talent',
+				url: '/portfolio/community-reads/rebel-talent',
+				selected: false,
+				icon: BookA
+			},
+			{
+				title: 'Healing Grounds',
+				url: '/portfolio/community-reads/healing-grounds',
+				selected: false,
+				icon: Book
+			}
 		]
 	},
 	{
