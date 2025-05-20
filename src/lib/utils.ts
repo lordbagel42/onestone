@@ -177,21 +177,7 @@ export const navBar: NavItem[] = [
 		title: 'My Shenanigans',
 		url: '/portfolio/shenanigans',
 		selected: false,
-		icon: Laugh,
-		items: [
-			{
-				title: 'Shenanigan 1',
-				url: '/portfolio/shenanigans/shenanigan-1',
-				selected: false,
-				icon: Laugh
-			},
-			{
-				title: 'Shenanigan 2',
-				url: '/portfolio/shenanigans/shenanigan-2',
-				selected: false,
-				icon: Laugh
-			}
-		]
+		icon: Laugh
 	},
 	{
 		title: 'Robotics',
